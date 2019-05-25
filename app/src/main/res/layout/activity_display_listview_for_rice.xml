@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#FC9"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Select Rice"
+            android:textColor="#000"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="#FC9"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/submit_vegetables_for_create_todays_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Done...Next"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:onClick="saveInfoToRice"
+            tools:ignore="InvalidId" />
+
+        <Button
+            android:id="@+id/btnNextToCreateOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/submit_vegetables_for_create_todays_menu"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="19dp"
+            android:layout_marginRight="19dp"
+            android:text="Next"
+            android:onClick="parseJSONForBreads"/>
+
+        <TextView
+            android:id="@+id/txtviewTotal"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/submit_vegetables_for_create_todays_menu"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="259dp"
+            android:layout_marginRight="259dp"
+            android:text="Total"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/txtBillAmount"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="130dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="13dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="24sp"
+            tools:text="Bill Amount" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:id="@+id/scrollablecontents"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_above="@id/footer"
+        android:layout_below="@id/header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/listview"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

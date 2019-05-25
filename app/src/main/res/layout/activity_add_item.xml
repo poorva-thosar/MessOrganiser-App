@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddItem"
+    android:background="#1F2833"
+    >
+
+    <Spinner
+        android:id="@+id/simpleSpinner"
+        android:layout_width="190dp"
+        android:layout_height="33dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="100dp"
+        android:background="@android:color/darker_gray" />
+
+    <EditText
+        android:id="@+id/txtName"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="324dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="158dp"
+        android:ems="10"
+        android:hint="Enter Item Name"
+        android:inputType="text|textPersonName"
+        android:selectAllOnFocus="false"
+        android:singleLine="true"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@android:color/darker_gray" />
+
+    <EditText
+        android:id="@+id/txtTaste"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="324dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="272dp"
+        android:ems="10"
+        android:hint="Enter Vegetable Taste"
+        android:inputType="text|textPersonName"
+        android:selectAllOnFocus="false"
+        android:singleLine="true"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@android:color/darker_gray" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="325dp"
+        android:layout_height="34dp"
+        android:layout_alignEnd="@+id/txtName"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="403dp"
+        android:layout_marginEnd="-1dp"
+        android:background="#48C0C2"
+        android:elevation="24dp"
+        android:onClick="setAdd"
+        android:text="Add" />
+
+    <EditText
+        android:id="@+id/txtCost"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="323dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="216dp"
+        android:layout_marginEnd="31dp"
+        android:ems="10"
+        android:hint="Enter Cost of Item Per Serving"
+        android:inputType="number"
+        android:textColorHint="@android:color/darker_gray"
+        android:textColor="@android:color/background_light"
+        />
+
+</RelativeLayout>

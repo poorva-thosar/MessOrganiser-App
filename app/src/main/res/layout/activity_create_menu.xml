@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1F2833">
+
+    <!--<Spinner-->
+        <!--android:id="@+id/vegSpinner"-->
+        <!--android:layout_width="236dp"-->
+        <!--android:layout_height="53dp"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_marginStart="148dp"-->
+        <!--android:layout_marginTop="32dp"-->
+        <!--android:background="#ffff" />-->
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="27dp"
+        android:text="Add More" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:text="Next" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="101dp"
+        android:text="Parse"
+        android:onClick="parseJSON"/>
+
+    <!--<EditText-->
+        <!--android:id="@+id/txtQty"-->
+        <!--android:layout_width="97dp"-->
+        <!--android:layout_height="53dp"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_marginStart="148dp"-->
+        <!--android:layout_marginTop="97dp"-->
+        <!--android:background="#ffff"-->
+        <!--android:ems="10"-->
+        <!--android:inputType="number|numberDecimal"-->
+        <!--android:textColor="#000"-->
+        <!--tools:text="Quantity" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView2"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_marginStart="18dp"-->
+        <!--android:layout_marginTop="45dp"-->
+        <!--android:text="VEGETABLES"-->
+        <!--android:textColor="#ffff"-->
+        <!--android:textSize="14dp"/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView9"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignStart="@+id/textView2"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_marginTop="117dp"-->
+        <!--android:text="QUANTITY(K.G)"-->
+        <!--android:textColor="#ffff"-->
+        <!--android:textSize="14dp" />-->
+
+    <!--<ListView-->
+        <!--android:id="@+id/listview"-->
+        <!--android:layout_width="338dp"-->
+        <!--android:layout_height="241dp"-->
+        <!--android:layout_alignStart="@+id/button2"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_marginStart="-4dp"-->
+        <!--android:layout_marginTop="174dp" />-->
+
+</RelativeLayout>

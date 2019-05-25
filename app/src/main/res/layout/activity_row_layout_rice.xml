@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:background="@drawable/my_selector_for_vegetable_listview">
+
+    <TextView
+        android:layout_height="match_parent"
+        android:layout_width="120dp"
+        android:id="@+id/tx_srno"
+        android:layout_alignParentLeft="true"
+        android:text="9"
+        android:gravity="center"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        />
+
+    <TextView
+        android:layout_height="match_parent"
+        android:layout_width="120dp"
+        android:id="@+id/tx_name"
+        android:layout_toRightOf="@id/tx_srno"
+        android:text="Poorva"
+        android:gravity="center"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        />
+
+
+    <TextView
+        android:layout_height="match_parent"
+        android:layout_width="120dp"
+        android:id="@+id/tx_taste"
+        android:layout_toRightOf="@id/tx_name"
+        android:text="sweet"
+        android:gravity="center"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        />
+
+</RelativeLayout>
